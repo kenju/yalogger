@@ -1,5 +1,5 @@
 {
-  "name": "yalogger",
+  "name": "@kenju/yalogger",
   "version": "0.0.1",
   "description": "Yet Another Logger",
   "main": "lib/src/index.js",
