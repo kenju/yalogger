@@ -12,7 +12,6 @@ jobs:
       - run:
           name: setup
           command:
-            npm install --global typescript
             npm install --no-emoji --no-progress
 
       - run:
