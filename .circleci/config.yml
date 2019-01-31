@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.12
+
+    working_directory: /repo
+
+    steps:
+      - checkout
+
+      - run:
+          name: setup
+          command:
+            npm install --global typescript
+            npm install --no-emoji --no-progress
+
+      - run:
+          name: test
+          command:
+            npm run test
