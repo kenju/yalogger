@@ -7,7 +7,7 @@ Yet Another logger, written in TypeScript.
 # Install
 
 ```bash
-npm install yalogger
+npm install @kenju/yalogger
 # or
-# yarn add yalogger
+# yarn add @kenju/yalogger
 ```

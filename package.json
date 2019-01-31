@@ -8,8 +8,6 @@
   "scripts": {
     "reset": "rm -Rf lib",
     "compile": "tsc --project tsconfig.json",
-    "pretest": "npm run reset && npm run compile",
-    "test": "NODE_ENV=test mocha -R spec lib/spec/**/*.js --reporter dot",
     "lint": "tslint --project tsconfig.json --fix",
     "prepublish": "npm run reset && npm run compile"
   },
