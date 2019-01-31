@@ -1,0 +1,20 @@
+.git/
+
+# for editor settings
+.idea/
+.vscode/
+
+# for npm
+node_modules/
+npm-shrinkwrap.json
+npm-debug.log
+
+.yarnclean
+.yarnlock
+
+# tests
+test/
+spec/
+
+# misc
+circle.yml

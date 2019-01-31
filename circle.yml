@@ -1,0 +1,26 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  node:
+    version: 6.1.0
+  environment:
+    YARN_VERSION: 0.17.10
+    PATH: "${PATH}:${HOME}/.yarn/bin"
+    NODE_ENV: circleci
+
+dependencies:
+  cache_directories:
+    - ~/.yarn
+    - ~/.yarn-cache
+  pre:
+    - |
+      if [[ ! -e ~/.yarn/bin/yarn || $(yarn --version) != "${YARN_VERSION}" ]]; then
+        curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN_VERSION
+      fi
+  override:
+    - yarn install --no-emoji --no-progress
+    - yarn global add typescript
+
+test:
+  override:
+    - yarn test
