@@ -1,6 +1,6 @@
 {
   "name": "@kenju/yalogger",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Yet Another Logger",
   "main": "lib/index.js",
   "repository": "ssh://git@github.com/kenju/yalogger.git",
